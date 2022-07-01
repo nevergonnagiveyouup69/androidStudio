@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     public void callEvent(View view) {
         String phNum = phoneNumber.getText().toString();
         Intent intent = new Intent(Intent.ACTION_DIAL);
-        intent.setData(Uri.parse("telephone:"+phNum));
+        intent.setData(Uri.parse("the telephone no is:"+phNum));
         startActivity(intent);
 
     }
